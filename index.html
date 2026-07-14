@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Shayan Shahg</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+        .profile-card {
+            background: white;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 11px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1em;
+        }
+        strong {
+            color: #3498db;
+        }
+        
+        /* This class makes the name look clickable and sets up the new color */
+        .clickable-name {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .clickable-name.changed-color {
+            color: #2ecc71; /* The new color when clicked (Emerald Green) */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <h1>Introduction</h1>
+        <p>Hello! Welcome to my personal profile page. Here is a little bit about me:</p>
+        
+        <ul>
+            <!-- Added an ID and class to the name so JavaScript can find it and style it -->
+            <li><strong>Name:</strong> <span id="myName" class="clickable-name">Shayan shahg</span></li>
+            <li><strong>Age:</strong> 22</li>
+            <li><strong>Gender:</strong> Male</li>
+            <li><strong>Nationality:</strong> Pakistani</li>
+            <li><strong>Religion:</strong> Islam</li>
+            <li><strong>Qualification:</strong> BS in Information Technology (IT)</li>
+        </ul>
+    </div>
+
+    <script>
+        // Find the name element by its ID
+        const nameElement = document.getElementById('myName');
+
+        // Listen for a click on the name
+        nameElement.addEventListener('click', function() {
+            // Toggle the 'changed-color' class on and off every time it's clicked
+            nameElement.classList.toggle('changed-color');
+        });
+    </script>
+
+</body>
+</html>
