@@ -3,79 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Shayan Shahg</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 40px;
-            color: #333;
-        }
-        .profile-card {
-            background: white;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 30px;
-            border-radius: 11px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-            font-size: 1.1em;
-        }
-        strong {
-            color: #3498db;
-        }
-        
-        /* This class makes the name look clickable and sets up the new color */
-        .clickable-name {
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-        .clickable-name.changed-color {
-            color: #2ecc71; /* The new color when clicked (Emerald Green) */
-        }
-    </style>
+    <title >My university website model</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/v4-shims.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+
 </head>
 <body>
+    
 
-    <div class="profile-card">
-        <h1>Introduction</h1>
-        <p>Hello! Welcome to my personal profile page. Here is a little bit about me:</p>
-        
-        <ul>
-            <!-- Added an ID and class to the name so JavaScript can find it and style it -->
-            <li><strong>Name:</strong> <span id="myName" class="clickable-name">Shayan shahg</span></li>
-            <li><strong>Age:</strong> 22</li>
-            <li><strong>Gender:</strong> Male</li>
-            <li><strong>Nationality:</strong> Pakistani</li>
-            <li><strong>Religion:</strong> Islam</li>
-            <li><strong>Qualification:</strong> BS in Information Technology (IT)</li>
-        </ul>
+<section class="header">
+    <nav class="nav">
+        <a href="index.html"><img src="images/logo.png" ></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSES</a></li>
+                <li><a href="">CONTACT</a></li>
+ </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Welcome to our university</h1>
+        <p>We are a leading institution of higher learning <br> dedicated to providing quality education and fostering innovation.</p>
+        <a href="" class="hero-btn">Visit Us to Know More</a>
+</div>
+</section>
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Explore our diverse range of programs designed to empower students with knowledge and skills for a successful future.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Computer Science</h3>
+            <p>Our Computer Science program equips students with the latest technological skills and knowledge to excel in the digital world.</p>
+        </div>
+        <div class="course-col">
+            <h3>Business Administration</h3>
+            <p>The Business Administration program prepares students for leadership roles in various industries, focusing on strategic thinking and management skills.</p>
+        </div>
+        <div class="course-col">
+            <h3>Engineering</h3>
+            <p>Our Engineering courses provide hands-on experience and theoretical knowledge, preparing students for innovative careers in engineering fields.</p>
+        </div>
     </div>
 
-    <script>
-        // Find the name element by its ID
-        const nameElement = document.getElementById('myName');
+</section>
+<section class="campus">
+    
+    <h1>Our global campus</h1>
+    <p>Discover the experiences of our students and how our university has impacted their lives.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png">
+            <div class="layer">
+                <h3>London</h3>
+            </div> 
+        </div>
+        
+        <div class="campus-col">
+            <img src="images/newyork.png">
+            <div class="layer">
+                <h3>New York</h3>
+            </div>
+        </div>
+               
+        <div class="campus-col">
+            <img src="images/washington.png">
+            <div class="layer">
+                <h3>Washington</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p>We provide state-of-the-art facilities to support our students' academic and extracurricular activities.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>Our library offers a vast collection of resources, including books, journals, and digital materials to support research and learning.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Largest Basketball Court</h3>
+            <p>Our state-of-the-art basketball court provides an excellent venue for competitive play and recreational activities.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Cafeteria</h3>
+            <p>Our modern cafeteria provides a variety of nutritious meals and snacks to cater to our students' dietary needs.</p>
+        </div>
+    </div>
+    </section>
+    <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>Discover the experiences and testimonials from our valued students.</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>"The university has provided me with an exceptional learning environment and countless opportunities for personal growth."</p>
+                <h3>Jane Smith</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                
+            </div>
+    </div>
+    
+        <div class="testimonial-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p>"I am grateful for the supportive faculty and the vibrant campus life that has enriched my university experience."</p>
+                <h3>John Doe</h3>
+                 <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                
+            </div>
+</div>
 
-        // Listen for a click on the name
-        nameElement.addEventListener('click', function() {
-            // Toggle the 'changed-color' class on and off every time it's clicked
-            nameElement.classList.toggle('changed-color');
-        });
-    </script>
+    </div>
+</section>
+<section class="cta">
+    <h1>enroll for our various online courses <br>anywhere from the world</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
 
+</section>
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>We are the no.1 leading organization <br>for international standard education</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+    <i class="fa fa-tiktok"></i>
+<i class="fa fa-tiktok"></i>
+<i class="fa fa-twitter"></i>
+    </div>
+<p>made with <i class="fa fa-heart-o"></i>easy tutorials</p>
+</section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 </body>
 </html>
