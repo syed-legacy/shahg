@@ -45,7 +45,7 @@
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: yellow;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -55,7 +55,7 @@
     content: '';
     width: 100%;
     height: 2px;
-    background: #f44336;
+    background: blue;
     display: block;
     margin: auto;
 }
@@ -88,8 +88,8 @@
     cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid goldenrod;
+    background: goldenrod;
     transition: 1s;
 }
 nav .fa{
@@ -106,7 +106,7 @@ nav .fa{
    
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: goldenrod;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -130,7 +130,7 @@ nav .fa{
     }
     .nav-links ul{
         padding: 30px;
-        background: #f44336;
+        background: goldenrod;
         height: 100vh;
         width: 200px;
         position: fixed;
@@ -216,7 +216,7 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-    background: rgba(226,0,0,0.7);
+    background: rgba(226, 0, 0, 0.884);
 }
 .layer h3{
     width: 100%;
@@ -249,8 +249,11 @@ h3{
     text-align: left;
 }
 .facilities-col img{
-    width: 100%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
     border-radius: 10px;
+    display: block;
 }
 .facilities-col h3{
     margin-top: 16px;
@@ -291,7 +294,7 @@ h3{
     padding: 0;
 }
 .testimonial-col .fa{
-    color: #f44336;
+    color: blue;
 }
 @media(max-width: 700px){
     
@@ -333,11 +336,11 @@ h3{
     font-weight: 600;
 }
 .icons .fa{
-    color: red;
+    color: yellowgreen;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
 .fa-heart-o{
-    color:#f44336;
+    color: yellowgreen;
 }
