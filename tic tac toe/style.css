@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d7421;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    margin: 40px 0 30px;
+    letter-spacing: 2px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .box is the GRID that holds the 9 buttons */
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+}
+
+/* .game is EACH individual button/cell */
+.game {
+    height: 100px;
+    width: 100px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: white;
+    color: #1d7421;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.game:hover:not(:disabled) {
+    background-color: #dff2e1;
+}
+
+.game:disabled {
+    cursor: not-allowed;
+}
+
+#status {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#reset {
+    margin-top: 30px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    color: #1d7421;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #dff2e1;
+}
